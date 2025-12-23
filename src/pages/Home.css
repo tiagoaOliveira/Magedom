@@ -1,0 +1,218 @@
+.home-container {
+    display: flex;
+    flex-direction: column;
+    height: 100dvh;
+    background-image: url('/deungoen-1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.header {
+    flex-shrink: 0;
+}
+
+.home-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+}
+
+.fight {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.character-stats {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.character-stats img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 50%;
+}
+
+.fight-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background: rgba(0, 0, 0, 0.8);
+    font-weight: bold;
+    border: 1px solid white;
+    width: 10rem;
+    height: 3.5rem;
+    border-radius: 1rem;
+}
+
+/* LOOT MODAL */
+.loot-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.85);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10000;
+    backdrop-filter: blur(5px);
+    animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.loot-modal-content {
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+    border-radius: 20px;
+    padding: 3rem 2rem 2rem 2rem;
+    max-width: 700px;
+    width: 90%;
+    position: relative;
+    border: 3px solid #FFD700;
+    box-shadow: 0 0 50px rgba(255, 215, 0, 0.5);
+    animation: scaleIn 0.4s ease;
+}
+
+@keyframes scaleIn {
+    from {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.loot-items-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.loot-item-card {
+    position: relative;
+    background: rgba(255, 255, 255, 0.05);
+    border: 2px solid rgba(255, 215, 0, 0.3);
+    border-radius: 15px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.3s ease;
+    animation: itemAppear 0.5s ease backwards;
+}
+
+.loot-item-card:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.loot-item-card:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.loot-item-card:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+.loot-item-card:nth-child(4) {
+    animation-delay: 0.4s;
+}
+
+.loot-item-card:nth-child(5) {
+    animation-delay: 0.5s;
+}
+
+.loot-item-quantity {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    background: rgba(240, 145, 36, 0.2);
+    color: #f09124;
+    font-weight: bold;
+    padding: 4px 8px;
+    border-radius: 12px;
+    font-size: 14px;
+}
+
+
+@keyframes itemAppear {
+    from {
+        opacity: 0;
+        transform: translateY(20px) scale(0.8);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+.loot-item-card:hover {
+    transform: translateY(-5px);
+    border-color: #FFD700;
+    box-shadow: 0 5px 20px rgba(255, 215, 0, 0.3);
+}
+
+.loot-item-image {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+}
+
+.loot-item-name {
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
+}
+
+.loot-modal-confirm {
+    width: 100%;
+    padding: 15px;
+    background: linear-gradient(135deg, #FFD700, #FFA500);
+    border: none;
+    border-radius: 10px;
+    color: #1a1a2e;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.loot-modal-confirm:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 20px rgba(255, 215, 0, 0.5);
+}
+
+.nav-menu {
+    margin-top: 1rem;
+}
+
+@media (max-width: 380px) {
+
+
+}

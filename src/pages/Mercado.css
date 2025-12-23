@@ -1,0 +1,19 @@
+.mercado-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.mercado-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.mercado-list {
+    margin: auto;
+     font-weight: bold;
+}

@@ -1,0 +1,14 @@
+CREATE TABLE xp_item_definitions (
+  id INT PRIMARY KEY,
+  nome TEXT NOT NULL,
+  xp INT NOT NULL,
+);
+
+CREATE TABLE public.skills (
+  id SERIAL PRIMARY KEY,
+  name TEXT NOT NULL,
+  image TEXT, 
+  descricao TEXT,
+  xp_skill INT NOT NULL,
+  base_effect JSONB NOT NULL
+);
