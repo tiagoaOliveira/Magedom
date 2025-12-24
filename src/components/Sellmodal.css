@@ -1,0 +1,109 @@
+.modal-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.modal-container {
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+    border-radius: 12px;
+    padding: 24px;
+    max-width: 400px;
+    width: 90%;
+    color: #fff;
+    box-sizing: border-box;
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.modal-title {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.modal-close {
+    background: rgba(255, 0, 0, 0.2);
+    border: 2px solid rgba(255, 0, 0, 0.5);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    cursor: pointer;
+}
+
+.sellmodal-item-info {
+    background: rgba(255, 255, 255, 0.15);
+    padding: 16px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.sellmodal-item-name {
+    margin: 0 0 8px 0;
+}
+
+.sellmodal-item-quantity {
+    margin: 0;
+    font-size: 14px;
+    opacity: 0.9;
+}
+
+.sellmodal-form-group {
+    margin-bottom: 16px;
+    color: #f09124;
+}
+
+.sellmodal-form-label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.form-input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    border: none;
+    font-size: 16px;
+    box-sizing: border-box;
+    color: white;
+}
+
+.modal-actions {
+    display: flex;
+    gap: 12px;
+    margin-top: 8px;
+}
+
+.btn {
+    flex: 1;
+    padding: 12px;
+    border-radius: 6px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn-cancel {
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+}
+
+.btn-submit {
+    background: linear-gradient(135deg, #4CAF50, #45a049);
+    color: #fff;
+}

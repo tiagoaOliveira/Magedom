@@ -1,19 +1,147 @@
 .mercado-container {
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    height: 100dvh;
+    background-image: url(/market.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  
 }
 
 .mercado-content {
     flex: 1;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: flex-end;
 }
 
+.mercado-area {
+    display: flex;
+    flex: 1;
+    margin-top: 1rem;
+}
+
+.mercado-sidebar {
+    display: flex;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.25);
+    padding: 0.5rem;
+    gap: 0.25rem;
+}
+
+.categoria button {
+    width: 100%;
+    background: #4c51bf;
+    border: none;
+    padding: 10px;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.categoria button:hover {
+    background: #5a67d8;
+}
+
+/* LISTA DIREITA */
 .mercado-list {
-    margin: auto;
-     font-weight: bold;
+    background: rgba(0, 0, 0, 0.25);
+    padding: 0 1rem;
+    flex: 1;
+    overflow-y: auto;
+}
+
+.itens-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.empty-message {
+    color: #fff;
+    background: rgba(0, 0, 0, 0.7);
+    text-align: center;
+    padding: 2rem;
+}
+
+.item-card {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 15px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+.item-card-info {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.item-card-info > p {
+    color: white;
+}
+
+.item-card-title {
+    margin: 0 0 8px 0;
+    color: #fff;
+    font-size: 1.1rem;
+}
+
+.item-card-seller,
+.item-card-quantity,
+.item-card-status {
+    font-size: 14px;
+    opacity: 0.8;
+    margin: 4px 0;
+}
+
+.item-card strong {
+    color: #ffd700;
+    font-size: 1.2rem;
+}
+
+.item-card-compra {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.item-card button {
+    color: white;
+    background: #48bb78;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.item-card button:hover:not(.disabled) {
+    background: #38a169;
+}
+
+.item-card button.disabled {
+    background: #718096;
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: center;
+}
+
+.loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #fff;
+    font-size: 1.5rem;
 }

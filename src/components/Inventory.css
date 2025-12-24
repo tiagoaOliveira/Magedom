@@ -7,7 +7,7 @@
   background: rgba(0, 0, 0, 0.8);
   display: flex;
   justify-content: center;
-  align-items: center;
+  padding-top: 3rem;
   z-index: 1000;
   backdrop-filter: blur(5px);
 }
@@ -15,15 +15,16 @@
 .inventory-modal-content {
   background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
   border-radius: 20px;
-  width: 90%;
-  max-width: 900px;
-  max-height: 85vh;
+  width: 80%;
+  max-width: 700px;
+  max-height: 90vh;
   position: relative;
   display: flex;
   flex-direction: column;
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
   border: 2px solid rgba(240, 145, 36, 0.3);
   overflow: hidden;
+  flex: 1;
 }
 
 .inventory-modal-close {
@@ -309,30 +310,15 @@
   box-shadow: 0 10px 30px rgba(255, 215, 0, 0.3);
 }
 
-/* Scrollbar customizada */
-.inventory-body::-webkit-scrollbar {
-  width: 10px;
-}
-
-.inventory-body::-webkit-scrollbar-track {
-  background: rgba(0, 0, 0, 0.2);
-  border-radius: 10px;
-}
-
-.inventory-body::-webkit-scrollbar-thumb {
-  background: rgba(240, 145, 36, 0.5);
-  border-radius: 10px;
-}
-
-.inventory-body::-webkit-scrollbar-thumb:hover {
-  background: rgba(240, 145, 36, 0.7);
-}
-
 /* Responsivo */
-@media (max-width: 768px) {
+@media (max-width: 380px) {
+  .inventory-modal-overlay {
+    padding-top: 2rem;
+  }
+
   .inventory-modal-content {
     width: 95%;
-    max-height: 90vh;
+    max-height: 85vh;
   }
 
   .inventory-grid {

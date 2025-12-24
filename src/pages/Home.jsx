@@ -154,7 +154,7 @@ const Home = () => {
             className='side-button'
             onClick={() => setInventoryModalOpen(true)}
           >
-            <Backpack color='#f09124' size={48} />
+            <Backpack color='#f09124' size={60} />
           </button>
         </div>
 

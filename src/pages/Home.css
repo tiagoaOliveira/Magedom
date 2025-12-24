@@ -213,6 +213,8 @@
 }
 
 @media (max-width: 380px) {
-
+    .fight {
+    gap: 1rem;
+}
 
 }
